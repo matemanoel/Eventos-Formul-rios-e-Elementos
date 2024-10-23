@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Produtos</title>
+    <link rel="icon" type="image/png" href="ped1.png">
+    <style>
+
+.digita {
+color: black;
+font-size: 16px;
+}
+
+.form-submit-button {
+background: lightblue;
+color: black;
+border: 1px solid black;
+border-radius: 10px;
+text-shadow: none;
+font-size: 16px;
+font-weight: bold;
+spacing:30px;
+}
+
+.form-submit-button:hover {
+background: blue;
+color: #fff;
+border: 4px outset gray;
+border-radius: 20px;
+text-shadow: none;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div align="center">
+    <center>
+       <table border="1" cellpadding="0" cellspacing="0" width=100%>
+        <tr>
+            <td bgcolor="black" width=100%> 
+            <font color="white" face="Arial" size=4><b>
+                <p align="center" id="topo">Clientes / Pedidos</p></b>
+            </font>
+            </td>
+        </tr>
+        <tr>
+            <td>
+             <form method="POST">
+              <input type="hidden" name="operacao" value="incluir">
+              <table border="0" cellpadding="20">
+               <tr>
+                <td width="5%" align="left"><p></p></td>
+               <td width="20%" align="left">
+                <font color="black" face="Arial" size=4>
+                <b>Cliente:</b>
+                <input class="digita" type="text" id="codigo" name="codigo" size="10" maxlength="10">
+                <br>
+                </font>
+               </td>
+               <td width="20%" align="left">
+                <font color="black" face="Arial" size=4>
+                <b>Data início:</b>
+                <input class="digita" type="date" id="categoria" name="categoria" size="50">
+                <br>
+                </font>
+               </td>
+               <td width="20%" align="left" rowspan="2">
+                <font color="black" face="Arial" size=4>
+                <b>Data fim:</b>
+                <input class="digita" type="date" id="categoria" name="categoria" size="50">
+                </font>
+               </td>
+                <td width="20%" align="left">
+                <font color="black" face="Arial" size=4>
+                <input class="form-submit-button" type="submit" value="Consultar" name="salvar">
+                </font>
+               </td>               </tr>
+               </table>
+             </form>
+            </td>
+
+<tr>
+<td bgcolor="darkgray">
+    <form method="POST">
+    <input type="hidden" name="operacao" value="consulta">
+    <table width="100%" border="1" cellpadding="10" style="border-collapse:collapse;">
+        <td width="30%" align="center">
+            <font color="black" face="Arial" size=4>
+              Cliente
+            </font>
+           </td>
+     <td width="70%" align="center">
+        <font color="black" face="Arial" size=4>
+            Pedido
+        </font>
+    </td>
+   </table>
+</form>
+</td>
+</tr>
+
+</tr>
+    </table>
+    </center>
+</div>
+
+</body>
+</html>

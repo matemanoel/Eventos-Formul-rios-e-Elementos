@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Produtos</title>
+    <link rel="icon" type="image/png" href="ped1.png">
+    <style>
+
+.input1{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.digita {
+color: black;
+font-size: 16px;
+}
+
+.form-submit-button {
+background: lightblue;
+color: black;
+border: 1px solid black;
+border-radius: 10px;
+text-shadow: none;
+font-size: 16px;
+font-weight: bold;
+spacing:30px;
+}
+
+.form-submit-button:hover {
+background: blue;
+color: #fff;
+border: 4px outset gray;
+border-radius: 20px;
+text-shadow: none;
+}
+
+.table2 {
+  border-collapse: collapse;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div align="center">
+    <center>
+       <table border="1" cellpadding="0" cellspacing="0" width=100%>
+        <tr>
+            <td bgcolor="black" width=100%> 
+            <font color="white" face="Arial" size=4><b>
+                <p align="center" id="topo">Clientes / Pedidos</p></b>
+            </font>
+            </td>
+        </tr>
+        <tr>
+            <td>
+             <form method="POST">
+              <input type="hidden" name="operacao" value="incluir">
+              <table border="1" cellpadding="20" class="table2">
+               <tr>
+               <td width="30%" align="left">
+                <font color="black" face="Arial" size=4>
+                <b>Cliente:</b>
+                <input class="digita" type="text" id="codigo" name="codigo" size="30" maxlength="30">
+                <br>
+                </font>
+               </td>
+               <td width="20%" align="left">
+                <font color="black" face="Arial" size=4>
+                <b>Início:</b>
+                <input class="digita" type="date" id="categoria" name="categoria" size="50">
+                <br>
+                </font>
+               </td>
+               <td width="20%" align="left" rowspan="2">
+                <font color="black" face="Arial" size=4>
+                <b>Fim:</b>
+                <input class="digita" type="date" id="categoria" name="categoria" size="50">
+                </font>
+               </td>
+
+                <td width="15%" align="left">
+                 <font color="black" face="Arial" size=4>
+                 <b>Situação:  &nbsp;</b><select id="cars">
+                    <option value="preparação">Preparação</option>
+                    <option value="pronto">Pronto</option>
+                    <option value="entregue">Entregue</option>
+                  </select>
+                 <br>
+                 </font>
+                </td>
+
+
+                <td width="5%" align="left">
+                <font color="black" face="Arial" size=4>
+                <input class="form-submit-button" type="submit" value="Consultar" name="salvar">
+                </font>
+               </td>               </tr>
+               </table>
+             </form>
+            </td>
+
+<tr>
+<td bgcolor="darkgray">
+    <form method="POST">
+    <input type="hidden" name="operacao" value="consulta">
+    <table width="100%" border="1" cellpadding="10" style="border-collapse:collapse;">
+        <td width="30%" align="center">
+            <font color="black" face="Arial" size=4>
+              Cliente
+            </font>
+           </td>
+     <td width="70%" align="center" colspan="3">
+        <font color="black" face="Arial" size=4>
+            Pedido
+        </font>
+    </td>
+
+<tr bgcolor="white" color="gray">
+<td width="30%" align="left" rowspan="3">
+abcdef@ghi.com
+</td>
+<td width="10%" align="left">
+nºPedido
+</td>
+
+                <td width="15%" align="left">
+                 <b>Situação:  &nbsp;</b><select id="cars">
+                    <option value="preparação">Preparação</option>
+                    <option value="pronto">Pronto</option>
+                    <option value="entregue">Entregue</option>
+                  </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;<input class="form-submit-button" type="submit" value="Alterar" name="salvar">
+                </td>
+<td width="10%" align="left">
+Valor: R$ 999,99
+</td>
+</tr>
+<tr bgcolor="white"  color="gray">
+<td colspan="3" rowspan="2">
+<input class="input1" type="text" value="item categoria / item descrição / quantidade" size="120" maxlength="120" readonly/><br>
+<input class="input1" type="text" value="item categoria / item descrição / quantidade" size="120" maxlength="120" readonly/>
+</td>
+</tr>
+   </table>
+</form>
+</td>
+</tr>
+
+</tr>
+    </table>
+    </center>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Pedidos</h1>
+        <form id="orderForm">
+            <div class="list-container">
+                <div>
+                    <h2>Sanduíches</h2>
+                    <select id="sandwich" required>
+                        <option value="">Selecione um sanduíche</option>
+                        <option value="Sanduíche 1">Sanduíche 1</option>
+                        <option value="Sanduíche 2">Sanduíche 2</option>
+                        <option value="Sanduíche 3">Sanduíche 3</option>
+                        <option value="Sanduíche 4">Sanduíche 4</option>
+                        <option value="Sanduíche 5">Sanduíche 5</option>
+                        <option value="Sanduíche 6">Sanduíche 6</option>
+                        <option value="Sanduíche 7">Sanduíche 7</option>
+                        <option value="Sanduíche 8">Sanduíche 8</option>
+                        <option value="Sanduíche 9">Sanduíche 9</option>
+                        <option value="Sanduíche 10">Sanduíche 10</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>Bebidas</h2>
+                    <select id="drink" required>
+                        <option value="">Selecione uma bebida</option>
+                        <option value="Bebida 1">Bebida 1</option>
+                        <option value="Bebida 2">Bebida 2</option>
+                        <option value="Bebida 3">Bebida 3</option>
+                        <option value="Bebida 4">Bebida 4</option>
+                        <option value="Bebida 5">Bebida 5</option>
+                        <option value="Bebida 6">Bebida 6</option>
+                        <option value="Bebida 7">Bebida 7</option>
+                        <option value="Bebida 8">Bebida 8</option>
+                        <option value="Bebida 9">Bebida 9</option>
+                        <option value="Bebida 10">Bebida 10</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Registrar Pedido</button>
+        </form>
+        
+        <div id="orderConfirmation" class="confirmation"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
